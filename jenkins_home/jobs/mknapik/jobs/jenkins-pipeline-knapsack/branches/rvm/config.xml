@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.7">
+  <actions>
+    <org.jenkinsci.plugins.orgfolder.github.GitHubLink plugin="github-organization-folder@1.5">
+      <image>branch</image>
+      <url>https://github.com/mknapik/jenkins-pipeline-knapsack/tree/rvm</url>
+    </org.jenkinsci.plugins.orgfolder.github.GitHubLink>
+  </actions>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.9">
+      <branch plugin="branch-api@1.11">
+        <sourceId>45b02719-5a6a-41d9-b9be-5fba0d472e52</sourceId>
+        <head plugin="scm-api@1.3">
+          <name>rvm</name>
+        </head>
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.0">
+          <configVersion>2</configVersion>
+          <userRemoteConfigs>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+              <url>https://github.com/mknapik/jenkins-pipeline-knapsack.git</url>
+              <credentialsId>jenkins-knapsack-docker-temporary</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+            <hudson.plugins.git.UserRemoteConfig>
+              <name>origin</name>
+              <refspec>+refs/pull/*/head:refs/remotes/origin/pr/*</refspec>
+              <url>https://github.com/mknapik/jenkins-pipeline-knapsack.git</url>
+              <credentialsId>jenkins-knapsack-docker-temporary</credentialsId>
+            </hudson.plugins.git.UserRemoteConfig>
+          </userRemoteConfigs>
+          <branches class="singleton-list">
+            <hudson.plugins.git.BranchSpec>
+              <name>rvm</name>
+            </hudson.plugins.git.BranchSpec>
+          </branches>
+          <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+          <submoduleCfg class="empty-list"/>
+          <extensions>
+            <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+              <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+            </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+          </extensions>
+        </scm>
+        <properties class="java.util.concurrent.CopyOnWriteArrayList"/>
+      </branch>
+    </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@2.9"/>
+  <triggers/>
+</flow-definition>

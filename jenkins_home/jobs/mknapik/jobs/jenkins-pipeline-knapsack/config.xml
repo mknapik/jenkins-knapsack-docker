@@ -86,8 +86,9 @@
     <data>
       <jenkins.branch.BranchSource>
         <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1.10">
-          <id>0c66f292-d863-445d-b875-5e42cedda197</id>
+          <id>45b02719-5a6a-41d9-b9be-5fba0d472e52</id>
           <checkoutCredentialsId>SAME</checkoutCredentialsId>
+          <scanCredentialsId>jenkins-knapsack-docker-temporary</scanCredentialsId>
           <repoOwner>mknapik</repoOwner>
           <repository>jenkins-pipeline-knapsack</repository>
           <includes>*</includes>
