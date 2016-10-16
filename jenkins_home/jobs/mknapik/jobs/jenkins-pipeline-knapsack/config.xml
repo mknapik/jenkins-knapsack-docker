@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.9">
+  <actions>
+    <org.jenkinsci.plugins.orgfolder.github.GitHubRepoAction plugin="github-organization-folder@1.5">
+      <url>https://github.com/mknapik/jenkins-pipeline-knapsack</url>
+      <description>Example Jenkins Pipeline configuration for RSpec with Knapsack</description>
+    </org.jenkinsci.plugins.orgfolder.github.GitHubRepoAction>
+    <org.jenkinsci.plugins.orgfolder.github.GitHubLink plugin="github-organization-folder@1.5">
+      <image>repo</image>
+      <url>https://github.com/mknapik/jenkins-pipeline-knapsack</url>
+    </org.jenkinsci.plugins.orgfolder.github.GitHubLink>
+  </actions>
+  <properties/>
+  <views>
+    <hudson.model.ListView>
+      <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../../.."/>
+      <name>Branches</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters>
+        <org.jenkinsci.plugins.orgfolder.github.BranchJobFilter plugin="github-organization-folder@1.5"/>
+      </jobFilters>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <org.jenkinsci.plugins.orgfolder.github.CustomNameJobColumn plugin="github-organization-folder@1.5">
+          <bundle>org.jenkinsci.plugins.orgfolder.github.Messages</bundle>
+          <key>ListViewColumn.Branch</key>
+        </org.jenkinsci.plugins.orgfolder.github.CustomNameJobColumn>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>false</recurse>
+    </hudson.model.ListView>
+    <hudson.model.ListView>
+      <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../../.."/>
+      <name>Pull Requests</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
+      </jobNames>
+      <jobFilters>
+        <org.jenkinsci.plugins.orgfolder.github.PullRequestJobFilter plugin="github-organization-folder@1.5"/>
+      </jobFilters>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <org.jenkinsci.plugins.orgfolder.github.CustomNameJobColumn plugin="github-organization-folder@1.5">
+          <bundle>org.jenkinsci.plugins.orgfolder.github.Messages</bundle>
+          <key>ListViewColumn.PullRequest</key>
+        </org.jenkinsci.plugins.orgfolder.github.CustomNameJobColumn>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+      <recurse>false</recurse>
+    </hudson.model.ListView>
+  </views>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <primaryView>Branches</primaryView>
+  <healthMetrics>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@5.13"/>
+  </healthMetrics>
+  <icon class="org.jenkinsci.plugins.orgfolder.github.GitHubRepoIcon" plugin="github-organization-folder@1.5"/>
+  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@5.13">
+    <pruneDeadBranches>true</pruneDeadBranches>
+    <daysToKeep>0</daysToKeep>
+    <numToKeep>0</numToKeep>
+  </orphanedItemStrategy>
+  <triggers>
+    <com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger plugin="cloudbees-folder@5.13">
+      <spec>H H * * *</spec>
+      <interval>86400000</interval>
+    </com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger>
+  </triggers>
+  <sources class="jenkins.branch.MultiBranchProject$BranchSourceList" plugin="branch-api@1.11">
+    <data>
+      <jenkins.branch.BranchSource>
+        <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1.10">
+          <id>47d8b23c-0ee1-4f61-96be-05d24ae359ce</id>
+          <checkoutCredentialsId>SAME</checkoutCredentialsId>
+          <scanCredentialsId>mknapik-jenkins-knapsack-docker-temporary</scanCredentialsId>
+          <repoOwner>mknapik</repoOwner>
+          <repository>jenkins-pipeline-knapsack</repository>
+          <includes>*</includes>
+          <excludes></excludes>
+          <buildOriginBranch>true</buildOriginBranch>
+          <buildOriginBranchWithPR>true</buildOriginBranchWithPR>
+          <buildOriginPRMerge>false</buildOriginPRMerge>
+          <buildOriginPRHead>false</buildOriginPRHead>
+          <buildForkPRMerge>true</buildForkPRMerge>
+          <buildForkPRHead>false</buildForkPRHead>
+        </source>
+      </jenkins.branch.BranchSource>
+    </data>
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </sources>
+  <factory class="org.jenkinsci.plugins.workflow.multibranch.WorkflowBranchProjectFactory">
+    <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
+  </factory>
+</org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject>

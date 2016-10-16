@@ -3,3 +3,6 @@ jenkins_home/workspace
 jenkins_home/war
 jenkins_home/plugins/*/
 !jenkins_home/plugins/*.jpi
+
+jenkins_home/jobs/mknapik/jobs/jenkins-pipeline-knapsack/branches
+!jenkins_home/jobs/mknapik/jobs/jenkins-pipeline-knapsack/branches/*/config.xml

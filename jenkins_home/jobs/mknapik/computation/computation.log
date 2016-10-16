@@ -1,0 +1,94 @@
+Started
+Consulting GitHub Organization
+Connecting to https://api.github.com using /******
+Looking up repositories of myself mknapik
+
+Ignoring aasm
+Ignoring akka
+Ignoring avr-MAC
+Ignoring avr-pf
+Ignoring chef-glassfish
+Ignoring database_rewinder
+Ignoring deb-s3
+Ignoring django-bootstrap-toolkit
+Ignoring django-certificate-authentication
+Ignoring django-guardian
+Ignoring docker-ruby-jenkins-test
+Ignoring dotfiles
+Ignoring fedorautils
+Ignoring flay
+Ignoring google-script-spreadsheet-example
+Ignoring guard-annotate
+Ignoring guard-rspec
+Ignoring guard-spring
+Ignoring GymHelper
+Ignoring health_check
+Ignoring heroku-badge
+Ignoring ideakeyscheme
+Ignoring Install-OpenCV
+Ignoring jenkins
+Ignoring jenkins-atlassian-theme
+Ignoring jenkins-knapsack-docker
+Proposing jenkins-pipeline-knapsack
+Connecting to https://api.github.com using /******
+Looking up [8mha:AAAAsR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLGEwySgpKSi20tdPzyzJKE0C6srVz83OSyzIzNbPSs3Lzswr1i3ILEgFuidVFyRenJicDQAn0h9DuQAAAA==[0mmknapik/jenkins-pipeline-knapsack
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+  Getting remote branches...
+
+    Checking branch [8mha:AAAAuh+LCAAAAAAAAP9djkEKwjAURL8VewCX4hXa7FwoBcGNQnHjCWL7adOkPyH5lXoNr6EbD+FxvIMt3TmbGQbmMa8vLIKHdd2VwVJaWArWYHq8O/RGkT5bxk32fGcP94kgOkFskCquc5h33jAs80bepDCSKnFhr6ja9R5Wf7jD5CMMJs0igN4NIWbY18wubIWoFNfddVi1otUkndKiQdKKQuKUw+EPJmMfZKEFe0RR2kKj/wEqsWA9xQAAAA==[0mdocker
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+    Checking branch [8mha:AAAAux+LCAAAAAAAAP9djjEKwkAURL8RtbcUr5AsWFgoKcRGIdh4gjV+ks1u/i67PxKv4TW08RAexzuYkM5pZhiYx7y+MAkelmVzDZaS3FKwBpPD3aE3ivTJMq7T5zt9uE8E0RGmBqngMoNx4w3DPKvkTQojqRBn9oqKbeth8YfbD97DYNAoAmhdF2YMu5LZhY0QheKyuXSrWtSapFNaVEhaUYidctj9wbjvg8y1YI8orjbX6Fc/Cca/XcYAAAA=[0mdocker2
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+    Checking branch [8mha:AAAAvx+LCAAAAAAAAP9djrENwjAURD9BUFFRIlYI7ihAVEgIJETDAMiEr9ix823sHxTWYA1oGIJx2IFE6bjmTifd072+MIgBpqq6REezzFF0Fmfbu8dgNZmDY5yvnu/Vw38SSHYwtEg5qz30q2AZxvtC3qSwknJx5KApX9YBJn+4dectDDr1EoDaN2HEsFHMPi6EyDWr6tysSlEakl4bUSAZTTH12mPzB9O2jzIzggOiuLjMYDiV93i1PwppT3DLAAAA[0mdocker_mysql
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+    Checking branch [8mha:AAAAuR+LCAAAAAAAAP9djkEKwjAURL8VPYBL8Qptdi6UguBGobjxBLF+0jTpT0h+pV7Da+jGQ3gc72BLd85mhoF5zOsLsxhgVbXX6CgrHUVnMTvcPQaryZwc4zp/vvOH/ySQHGFukRRXBUzbYBkWRS1vUlhJSpw5aFLbLsDyD7cffYDBqEkC0Pk+zBl2FbOPGyGU5qq99KtGNIak10bUSEZTTL322P/BdOijLI3ggCgaGRnDD1HtPOLFAAAA[0mmaster
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+    Checking branch [8mha:AAAAux+LCAAAAAAAAP9djkEKwjAURL8VewCX4hXa7FwoBcGNQnHjASTWT5sm/QnJb6nX8Bq68RAexzvY4s7ZzDAwj3l+YBY8LKv2GiylhaVgDab7m0NvFOmjZVxlj1d2d+8IogPEBqnkKodp6w3DPK9lJ4WRVIoTe0Xlpvew+MPtfj7C4KdJBNC7IcQM24rZhbUQpeKqvQyrRjSapFNa1EhaUUiccjj8wWTsgyy0YI8oyJ5913wBzQEW2cUAAAA=[0mno_rvm
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+    Checking branch [8mha:AAAAtx+LCAAAAAAAAP9djrENwjAURD+JYABKxAqJOwpQKhqQIhomMOHLNnZ+LPsnCmuwBjQMwTjsQKJ0XHOnk+7pXl+YxwBr3V5jQ3nVUGwc5oe7x+AM2VPDuCme7+LhPwkkR1g4JMW6hLQNjmFZ3mQnhZOkxJmDIbXrA6z+cPvJRxhMmiUAvR9CylBoZh+3QijDur0Mq1rUlqQ3VtyQrKGYeeNx+IPZ2EdZWcEBUYSu/gGt/vGlwgAAAA==[0mrvm
+      ‘Jenkinsfile’ exists in this branch
+    Met criteria
+
+  6 branches were processed
+
+Done examining mknapik/jenkins-pipeline-knapsack
+
+Ignoring jenkins-pipeline-utils
+Ignoring oh-my-zsh
+Ignoring path_expander
+Ignoring perficio
+Ignoring prezto
+Ignoring project-cockpit
+Ignoring pronto
+Ignoring pronto-flay
+Ignoring pronto-flay-ignore-issue
+Ignoring pronto-reek
+Ignoring pyage
+Ignoring rails
+Ignoring rdoc
+Ignoring rust-playground
+Ignoring soso
+Ignoring soso-chef
+Ignoring spring
+Ignoring tmux-config
+Ignoring trello-github-hooks
+Ignoring twfhackaton
+Ignoring u2i-jenkins
+Ignoring u2i-jenkins-matrix_project
+Ignoring u2i-jenkins-rails_project
+Ignoring ztis-lab
+Finished: SUCCESS

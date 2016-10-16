@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<folder-computation plugin="cloudbees-folder@5.13">
+  <actions/>
+  <result>
+    <name>SUCCESS</name>
+    <ordinal>0</ordinal>
+    <color>BLUE</color>
+    <completeBuild>true</completeBuild>
+  </result>
+  <durations>
+    <long>5797</long>
+  </durations>
+  <timestamp>1476617422606</timestamp>
+  <duration>5797</duration>
+</folder-computation>
