@@ -25,7 +25,7 @@
               <id>mknapik-jenkins-knapsack-docker-temporary</id>
               <description></description>
               <username></username>
-              <password>UCC8hVDT7nfcuqmd+s2/XNtjEeZqQpCt97cLAf8AGRAtC9s7K7hdPlBpUFHQ7J4g1LI3TGndeckBaeNFOeXMLQ==</password>
+              <password>1PxO1zAoXSTZAifOmoGnOABSUdp53uy6BnSz1lIcSOE92i4IhU2a6n3ZLiLpWFGOEU/1916IKOFLrrX++JYHCXWMLJEL+RTQnGZSyxqSZDZq7Eb8nKnXIOGcbqqtjk/eMBfg4CpRStuDmtQQlL8eBg==</password>
             </com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
           </java.util.concurrent.CopyOnWriteArrayList>
         </entry>
@@ -81,7 +81,6 @@
   <navigators>
     <org.jenkinsci.plugins.github__branch__source.GitHubSCMNavigator plugin="github-branch-source@1.10">
       <repoOwner>mknapik</repoOwner>
-      <scanCredentialsId>mknapik-jenkins-knapsack-docker-temporary</scanCredentialsId>
       <checkoutCredentialsId>SAME</checkoutCredentialsId>
       <pattern>jenkins-pipeline-knapsack</pattern>
       <buildOriginBranch>true</buildOriginBranch>

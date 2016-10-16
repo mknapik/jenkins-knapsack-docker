@@ -9,9 +9,8 @@
   <securityRealm class="hudson.security.SecurityRealm$None"/>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
-  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <workspaceDir>${ITEM_ROOTDIR}/workspace</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
-  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -29,9 +28,6 @@
   <primaryView>All</primaryView>
   <slaveAgentPort>50000</slaveAgentPort>
   <label>docker</label>
-  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
-  </crumbIssuer>
   <nodeProperties/>
   <globalNodeProperties/>
 </hudson>
